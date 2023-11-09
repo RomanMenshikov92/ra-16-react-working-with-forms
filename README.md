@@ -1,12 +1,12 @@
 # Работа с формами
 
-<!-- [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/ri5lh6s1l0va859j?svg=true)](https://ci.appveyor.com/project/RomanMenshikov92/ra-16-react-working-with-forms)
+[![Appveyor Build status](https://ci.appveyor.com/api/projects/status/2i04q1861vx367mq?svg=true)](https://ci.appveyor.com/project/RomanMenshikov92/ra-16-react-working-with-forms)
 
-[![Pages build status](https://github.com/RomanMenshikov92/ra-16-react-working-with-forms/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanMenshikov92/ra-16-react-working-with-forms/actions/workflows/pages/pages-build-deployment) -->
+[![Pages build status](https://github.com/RomanMenshikov92/ra-16-react-working-with-forms/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanMenshikov92/ra-16-react-working-with-forms/actions/workflows/pages/pages-build-deployment)
 
 ---
 
-<!-- ## [GutHub Pages](https://romanmenshikov92.github.io/ra-16-react-working-with-forms/) -->
+## [GutHub Pages](https://romanmenshikov92.github.io/ra-16-react-working-with-forms/)
 
 Необходимо выполнить и предоставить на проверку следующие задачи:
 
