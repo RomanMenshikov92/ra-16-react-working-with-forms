@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# Работа с формами
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/ri5lh6s1l0va859j?svg=true)](https://ci.appveyor.com/project/RomanMenshikov92/ra-16-react-working-with-forms)
 
-## Available Scripts
+[![Pages build status](https://github.com/RomanMenshikov92/ra-16-react-working-with-forms/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanMenshikov92/ra-16-react-working-with-forms/actions/workflows/pages/pages-build-deployment) -->
 
-In the project directory, you can run:
+---
 
-### `npm start`
+<!-- ## [GutHub Pages](https://romanmenshikov92.github.io/ra-16-react-working-with-forms/) -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Необходимо выполнить и предоставить на проверку следующие задачи:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<details>
+<summary>1. Конвертер цветов</summary>
 
-### `npm test`
+# Конвертер цветов из HEX в RGB
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Вам необходимо разработать конвертер цветов из HEX в RGB:
+![Конвертер цветов](./res/preview.png)
 
-### `npm run build`
+## Интерфейс конвертера
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+При правильном вводе цвета он показывает его представление в формате RGB и меняет цвет фона на заданный:
+![Цвет](./res/color.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Конвертер при вводе неправильного цвета в формате HEX должен сообщать об ошибке:
+![Ошибка](./res/error.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Необходимо дожидаться ввода всех семи символов, включая решётку, чтобы принимать решение о том, показывать ошибку или менять цвет фона.
 
-### `npm run eject`
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+<summary>2. Учёт тренировок</summary>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Учёт тренировок
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Вы решили реализовать небольшое приложение, которое хранит данные о тренировках и прогулках, которые вы совершаете в течение недели.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Общий интерфейс должен выглядеть следующим образом:
 
-## Learn More
+![Steps](./res/steps.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Добавление данных
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+У вас должна быть форма ввода, в которую вводится дата и количество пройденных километров. Новые значения добавляются в таблицу при отправке формы.
 
-### Code Splitting
+_Особенности добавления_:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Новые значения добавляются не в конец, а согласно сортировке по дате, то есть если мы добавим 21.07.2019, то значение встанет на первую позицию, согласно скриншоту, а если 17.07.2019 — то на последнюю.
+2. Если мы добавляем значения, указывая уже существующую дату, то значения суммируются с теми, что хранятся в таблице, например, если добавить 20.07.2019 и 10 км, то для даты 20.07.2019 будет отображаться 15.7 км.
 
-### Analyzing the Bundle Size
+## Удаление данных
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+С помощью иконки ✘ должна быть возможность удалить строку. Удаляется вся строка целиком и данные, связанные с ней.
 
-### Making a Progressive Web App
+## Редактирование данных
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Дополнительное, необязательное задание: вы можете реализовать кнопку редактирования ✎, при нажатии на которую происходит перенос данных в форму ввода с последующим сохранением при нажатии кнопки Ok.
 
-### Advanced Configuration
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<details>
+<summary>3. Менеджер фото — необязательная задача</summary>
 
-### Deployment
+# Менеджер фото
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Вы решили модернизировать один из старых проектов и переписать его в виде React-компонентов:
 
-### `npm run build` fails to minify
+![Менеджер фото](./res/image.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Интерфейс Менеджера фото
+
+При клике на области «Click to select» должно появляться стандартное окно выбора файлов операционной системы, в котором пользователь может выбрать один или несколько файлов изображений (image/\*).
+
+После выбора файлов они автоматически загружаются и отображаются в виде preview фиксированного размера (нижний блок). Для отображения используйте DataURL. Новые файлы должны добавляться, а не заменять предыдущие.
+
+При клике на крестик, изображение и все связанные с ним данные должны удаляться.
+
+Важно: Drag & Drop реализовывать не нужно.
+
+## Подсказки
+
+1. Разместите с помощью CSS блок "Click to select" над `<input type="file" />` и установите этому блоку `pointer-events: none;`, чтобы вызывать окошко выбора файлов при клике.
+1. Используйте следующую заготовку для получения DataUrl:
+
+```js
+const fileToDataUrl = (file) => {
+  return new Promise((resolve, reject) => {
+    const fileReader = new FileReader();
+
+    fileReader.addEventListener("load", (evt) => {
+      resolve(evt.currentTarget.result);
+    });
+
+    fileReader.addEventListener("error", (evt) => {
+      reject(new Error(evt.currentTarget.error));
+    });
+
+    fileReader.readAsDataURL(file);
+  });
+};
+
+const handleSelect = async (evt) => {
+  const files = [...evt.target.files];
+  const urls = await Promise.all(files.map((o) => fileToDataUrl(o)));
+  // У вас в массиве - dataUrl, можете использовать в качестве значения атрибута src тега img
+};
+```
+
+</details>
+</br>
+
+---
+
+Любые вопросы по решению задач задавайте в группе в Discord.
+
+Все три задачи лучше сдавать в разных репозиториях, то есть через create-react-app реализовать три проекта, чтобы не было конфликта стилей. Но если вы позаботитесь о том, что конфликта не будет, то можете сдавать и в одном проекте.
+
+Все стили необходимо размещать в файле App.css.
+
+#### Важно!
+
+Задачи должны быть написаны на TypeScript. Все Props должны иметь свой тип или интерфейс. Использование типа any не допускается.
+
+#### Альтернативный способ создания приложения React с использованием тулинга Vite
+
+Приложение также можно создать используя инструмент Vite.
+Документация по созданию приложения [React](https://vitejs.dev/guide/).
+
+1. Откройте терминал и пропишите следующую команду: `yarn create vite my-app --template react`,
+   либо `yarn create vite my-app --template react-ts`, если
+   нужен шаблон с TypeScript. Эта команда создаст настроенный
+   шаблонный проект.
+2. Откройте созданный проект в своей IDE.
+3. Установите зависимости.
+4. Готово. Чтобы запустить приложение, введите команду: `yarn dev`(либо `npm run dev`).

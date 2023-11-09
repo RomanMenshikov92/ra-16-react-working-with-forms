@@ -1,0 +1,93 @@
+.photo-manager__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.photo-manager__label,
+.photo-manager__input {
+  display: none;
+}
+
+.photo-manager__btn {
+  display: block;
+  width: 600px;
+  height: 200px;
+  font-size: 35px;
+  border: none;
+  border-radius: 50px;
+  text-shadow: 1px 1px 1px red;
+  box-shadow: 1px 1px 15px rgb(0, 68, 255);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+}
+
+.photo-manager__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  margin: 20px 0;
+  padding: 0;
+  width: 100%;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+  padding: 20px 0;
+}
+
+.photo-manager__item {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px rgb(0, 68, 255);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.photo-manager__img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.photo-manager__btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: crimson;
+  border: none;
+  display: none;
+}
+
+.photo-manager__item:hover .photo-manager__btn-close {
+  display: block;
+}
+
+.photo-manager__clear-btn {
+  align-self: center;
+  display: block;
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  text-shadow: 1px 1px 1px red;
+  box-shadow: 1px 1px 15px rgb(0, 68, 255);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+}
